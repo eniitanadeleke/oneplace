@@ -1,0 +1,10 @@
+:root{color-scheme:light;--tap:44px;}
+html,body,#root{min-height:100%;}
+body{overflow-x:hidden;}
+button,a,input,select,textarea{font:inherit;}
+button,a{-webkit-tap-highlight-color:transparent;}
+.page{overflow:clip;}
+.display{overflow-wrap:anywhere;}
+/* room for the mobile action bar */
+@media(max-width:899px){body{padding-bottom:calc(72px + env(safe-area-inset-bottom));}}
+body.menu-open{overflow:hidden;}

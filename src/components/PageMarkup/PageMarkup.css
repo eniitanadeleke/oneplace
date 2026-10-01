@@ -1,0 +1,2 @@
+.page-markup{width:100%;}
+.page-markup :target,.page-markup [id]{scroll-margin-top:calc(var(--nav-h) + 16px);}

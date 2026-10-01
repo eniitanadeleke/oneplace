@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.*
+*.log
+.DS_Store
+.vercel
+
+# private, never upload
+source-login-details.docx
