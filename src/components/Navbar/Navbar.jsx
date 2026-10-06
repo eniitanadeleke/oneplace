@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight, Phone } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import logo from "../../assets/one-place-logo-clean.png";
-import { contact } from "../../lib/contact";
 import "./Navbar.css";
 
 const links = [
@@ -66,7 +65,6 @@ export default function Navbar(){
             ))}
           </div>
           <div className="nav-cta">
-            <a className="nav-phone" href={contact.phoneHref}><Phone size={16} strokeWidth={1.8}/>{contact.phoneDisplay}</a>
             <Link className="btn sm brass nav-enquire" to="/enquire" onClick={close}>
               Enquire <ArrowRight size={15}/>
             </Link>

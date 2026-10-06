@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { mailto } from "../../lib/contact";
 import "./PageMarkup.css";
 
 const SAVED_KEY = "op-saved-spaces";
@@ -133,6 +134,15 @@ export default function PageMarkup({ html }) {
       const form = event.target.closest("form.js-form");
       if (!form) return;
       event.preventDefault();
+      // Enquiries go to the company email: open the visitor's mail app with the form filled in.
+      const heading = form.closest("section")?.querySelector("h2")?.textContent?.trim() || "Enquiry";
+      const lines = [];
+      form.querySelectorAll(".field").forEach(field => {
+        const label = field.querySelector("label")?.textContent?.trim();
+        const input = field.querySelector("input:not([type=file]), select, textarea");
+        if (label && input && input.value.trim()) lines.push(`${label}: ${input.value.trim()}`);
+      });
+      window.location.href = mailto(`One Place website: ${heading}`, lines.join("\n"));
       const wrap = form.parentElement;
       const done = wrap?.querySelector(".form-done");
       form.style.display = "none";

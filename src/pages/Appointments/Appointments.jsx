@@ -96,15 +96,14 @@ const markup = `
 <div class="field"><label for="a-guests">Number of guests</label><input id="a-guests" min="1" type="number" inputmode="numeric"/></div>
 <div class="field"><label for="a-name">Name</label><input id="a-name" type="text" autocomplete="name"/></div>
 <div class="field"><label for="a-co">Company</label><input id="a-co" type="text" autocomplete="organization"/></div>
-<div class="field"><label for="a-ph">Phone</label><input id="a-ph" type="tel" autocomplete="tel"/></div>
-<div class="field full"><label for="a-em">Email</label><input id="a-em" type="email" autocomplete="email"/></div>
+<div class="field"><label for="a-em">Email</label><input id="a-em" type="email" autocomplete="email"/></div>
 <div class="field full"><label for="a-notes">Anything we should set up in advance</label><textarea id="a-notes"></textarea></div>
 </div>
 <div class="btn-row"><button class="btn brass" type="submit">Hold this room</button></div>
 </form>
 <div class="form-done">
 <h4>Your room is held.</h4>
-<p>We will confirm by phone within two hours during working hours. Payment on arrival or by transfer before the day.</p>
+<p>We will confirm by email within two hours during working hours. Payment on arrival or by transfer before the day.</p>
 </div>
 </div>
 </div>

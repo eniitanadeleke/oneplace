@@ -91,15 +91,14 @@ const markup = `
 <select id="s-add"><option>None</option><option>Engineer</option><option>Camera crew</option><option>Live streaming</option><option>Editing suite</option></select>
 </div>
 <div class="field"><label for="s-name">Name</label><input id="s-name" type="text" autocomplete="name"/></div>
-<div class="field"><label for="s-ph">Phone</label><input id="s-ph" type="tel" autocomplete="tel"/></div>
-<div class="field full"><label for="s-em">Email</label><input id="s-em" type="email" autocomplete="email"/></div>
+<div class="field"><label for="s-em">Email</label><input id="s-em" type="email" autocomplete="email"/></div>
 <div class="field full"><label for="s-brief">What are you recording</label><textarea id="s-brief"></textarea></div>
 </div>
 <div class="btn-row"><button class="btn brass" type="submit">Request this session</button></div>
 </form>
 <div class="form-done">
 <h4>Session requested.</h4>
-<p>We will confirm availability and the full quote by phone within one working day.</p>
+<p>We will confirm availability and the full quote by email within one working day.</p>
 </div>
 </div>
 </div>

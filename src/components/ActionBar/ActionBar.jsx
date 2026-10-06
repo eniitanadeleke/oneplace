@@ -1,16 +1,18 @@
 import { Link, useLocation } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { contact } from "../../lib/contact";
+import { InstagramIcon, FacebookIcon } from "../SocialIcons/SocialIcons";
 import "./ActionBar.css";
 
-/* Sticky quick actions for phones: call, WhatsApp, enquire. */
+/* Sticky quick actions for phones: Instagram, Facebook, enquire. */
 export default function ActionBar(){
   const { pathname } = useLocation();
+  if (pathname === "/enquire") return null;
   return (
-    <div className="action-bar" role="region" aria-label="Quick contact">
-      <a className="ab-icon" href={contact.phoneHref} aria-label={`Call ${contact.phoneDisplay}`}><Phone size={19} strokeWidth={1.8}/></a>
-      <a className="ab-btn ghost" href={contact.whatsappHref} target="_blank" rel="noopener"><MessageCircle size={17} strokeWidth={1.8}/>WhatsApp</a>
-      {pathname !== "/enquire" && <Link className="ab-btn brass" to="/enquire">Enquire <ArrowRight size={16}/></Link>}
+    <div className="action-bar" role="region" aria-label="Quick links">
+      <a className="ab-icon" href={contact.instagramHref} target="_blank" rel="noopener" aria-label="Instagram"><InstagramIcon size={20}/></a>
+      <a className="ab-icon" href={contact.facebookHref} target="_blank" rel="noopener" aria-label="Facebook"><FacebookIcon size={20}/></a>
+      <Link className="ab-btn brass" to="/enquire">Enquire <ArrowRight size={16}/></Link>
     </div>
   );
 }

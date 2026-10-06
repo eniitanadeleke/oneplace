@@ -71,8 +71,7 @@ const markup = `
 <label for="p-type">Partnership type</label>
 <select id="p-type"><option>Land</option><option>Capital</option><option>Build to suit</option></select>
 </div>
-<div class="field"><label for="p-em">Email</label><input id="p-em" type="email" autocomplete="email"/></div>
-<div class="field"><label for="p-ph">Phone</label><input id="p-ph" type="tel" autocomplete="tel"/></div>
+<div class="field full"><label for="p-em">Email</label><input id="p-em" type="email" autocomplete="email"/></div>
 <div class="field full"><label for="p-loc">City and location</label><input id="p-loc" type="text"/></div>
 <div class="field full"><label for="p-desc">Brief description</label><textarea id="p-desc"></textarea></div>
 <div class="field full"><label for="p-file">Upload a document, optional</label><input id="p-file" type="file"/></div>

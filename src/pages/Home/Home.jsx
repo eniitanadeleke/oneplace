@@ -133,7 +133,7 @@ const markup = `
 <div><span class="n" data-count="18400">18,400</span><span class="t">Square metres developed or under development</span></div>
 <div><span class="n" data-count="62">62</span><span class="t">Businesses housed</span></div>
 </div>
-<p class="proof-note">Placeholder figures · replace with verified numbers before launch</p>
+<p class="proof-note"></p>
 </div>
 </section>
 
@@ -150,7 +150,6 @@ const markup = `
 <div class="field"><label for="h-name">Name</label><input id="h-name" name="name" required="" type="text" autocomplete="name"/></div>
 <div class="field"><label for="h-co">Company or organisation</label><input id="h-co" name="company" type="text" autocomplete="organization"/></div>
 <div class="field"><label for="h-em">Email</label><input id="h-em" name="email" required="" type="email" autocomplete="email"/></div>
-<div class="field"><label for="h-ph">Phone</label><input id="h-ph" name="phone" type="tel" autocomplete="tel"/></div>
 <div class="field"><label for="h-city">City</label><input id="h-city" name="city" type="text"/></div>
 <div class="field">
 <label for="h-int">I am interested in</label>
@@ -170,7 +169,7 @@ const markup = `
 </form>
 <div class="form-done">
 <h4>Thank you.</h4>
-<p>We have your enquiry and will come back to you within two working days. If it is urgent, call 0801 234 5678.</p>
+<p>We have your enquiry and will come back to you within two working days.</p>
 </div>
 </div>
 </div>

@@ -78,7 +78,7 @@ const markup = `
 ${listings.map(listing).join("\n")}
 <div class="empty" id="emptyState" style="display:none">
 <h4>Nothing matching that today.</h4>
-<p>We do not have a space matching that today. Tell us what you are looking for and we will call you when one comes up.</p>
+<p>We do not have a space matching that today. Tell us what you are looking for and we will email you when one comes up.</p>
 <a class="btn ghost" href="/enquire">Register your requirement</a>
 </div>
 </div>
