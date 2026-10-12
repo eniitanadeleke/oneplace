@@ -44,29 +44,7 @@ const markup = `
 </div>
 </div>
 </section>
-<section class="band shell">
-<div class="head-block"><span class="label">Leadership</span><h2 class="display">The people responsible.</h2></div>
-<div class="g3">
-<div class="card media-card person">
-<div class="cmedia plate portrait"><span class="cap"><b>Portrait</b> · Managing Director</span></div>
-<h4>Name to supply</h4>
-<p class="role">Managing Director</p>
-<p>Leads acquisition and development. Before One Place, spent [X] years [doing what] at [where]. Responsible for which sites we buy and what gets built on them.</p>
-</div>
-<div class="card media-card person">
-<div class="cmedia plate portrait"><span class="cap"><b>Portrait</b> · Director, Asset Management</span></div>
-<h4>Name to supply</h4>
-<p class="role">Director, Asset Management</p>
-<p>Leads leasing, tenant mix and facilities. Responsible for keeping buildings full and keeping them working once they are.</p>
-</div>
-<div class="card media-card person">
-<div class="cmedia plate portrait"><span class="cap"><b>Portrait</b> · Director, Operations</span></div>
-<h4>Name to supply</h4>
-<p class="role">Director, Operations</p>
-<p>Runs The Appointments, the event centres and One Place Studios. Responsible for everything a visitor experiences on the day.</p>
-</div>
-</div>
-</section>
+
 <section class="band sunk">
 <div class="shell split">
 <div><span class="label">Company</span><h2 class="display">The details.</h2></div>
@@ -87,3 +65,28 @@ const markup = `
 export default function About() {
   return <main className="page about-page"><PageMarkup html={markup} /></main>;
 }
+
+
+// <section class="band shell">
+// <div class="head-block"><span class="label">Leadership</span><h2 class="display">The people responsible.</h2></div>
+// <div class="g3">
+// <div class="card media-card person">
+// <div class="cmedia plate portrait"><span class="cap"><b>Portrait</b> · Managing Director</span></div>
+// <h4>Name to supply</h4>
+// <p class="role">Managing Director</p>
+// <p>Leads acquisition and development. Before One Place, spent [X] years [doing what] at [where]. Responsible for which sites we buy and what gets built on them.</p>
+// </div>
+// <div class="card media-card person">
+// <div class="cmedia plate portrait"><span class="cap"><b>Portrait</b> · Director, Asset Management</span></div>
+// <h4>Name to supply</h4>
+// <p class="role">Director, Asset Management</p>
+// <p>Leads leasing, tenant mix and facilities. Responsible for keeping buildings full and keeping them working once they are.</p>
+// </div>
+// <div class="card media-card person">
+// <div class="cmedia plate portrait"><span class="cap"><b>Portrait</b> · Director, Operations</span></div>
+// <h4>Name to supply</h4>
+// <p class="role">Director, Operations</p>
+// <p>Runs The Appointments, the event centres and One Place Studios. Responsible for everything a visitor experiences on the day.</p>
+// </div>
+// </div>
+// </section>

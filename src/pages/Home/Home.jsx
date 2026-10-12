@@ -126,16 +126,7 @@ const markup = `
 </div>
 </section>
 
-<section class="band invert">
-<div class="shell">
-<div class="proof">
-<div><span class="n" data-count="3">3</span><span class="t">Cities we are active in</span></div>
-<div><span class="n" data-count="18400">18,400</span><span class="t">Square metres developed or under development</span></div>
-<div><span class="n" data-count="62">62</span><span class="t">Businesses housed</span></div>
-</div>
-<p class="proof-note"></p>
-</div>
-</section>
+
 
 <section class="band shell" id="home-enquiry">
 <div class="split">
