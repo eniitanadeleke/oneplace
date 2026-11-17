@@ -17,7 +17,7 @@ const markup = `
 <p class="lede">Meeting rooms you can book by the hour.</p>
 <div class="body-col">
 <p>Some conversations need a door. The Appointments is our meeting suite inside One Place buildings. Book a room for two people or twenty, arrive, and the room is already set.</p>
-<div class="btn-row stack-sm" style="margin-top:22px"><a class="btn brass" href="/appointments#appt-form">Check availability <span class="arrow">→</span></a></div>
+<div class="btn-row stack-sm" style="margin-top:22px"><a class="btn brass" href="/appointments#appt-form">Check availability</a></div>
 </div>
 </div>
 </section>
@@ -29,21 +29,21 @@ const markup = `
 <h4>The Two Seater</h4>
 <p>Two to four people. For an interview, a first meeting, a signing.</p>
 <ul class="spec"><li><span class="k">${icon.clock}Rate</span><span class="v">Per hour, to supply</span></li></ul>
-<div class="card-foot"><a class="btn sm ghost" href="#appt-form" data-pick="a-room" data-value="The Two Seater">Hold this room <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="btn sm ghost" href="#appt-form" data-pick="a-room" data-value="The Two Seater">Hold this room</a></div>
 </div>
 <div class="card media-card">
 <div class="cmedia"><img src="${img.roomBoard}" alt="" loading="lazy"/></div>
 <h4>The Board Room</h4>
 <p>Eight to twelve people. Screen, long table, closed door.</p>
 <ul class="spec"><li><span class="k">${icon.clock}Rate</span><span class="v">Per hour, to supply</span></li></ul>
-<div class="card-foot"><a class="btn sm ghost" href="#appt-form" data-pick="a-room" data-value="The Board Room">Hold this room <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="btn sm ghost" href="#appt-form" data-pick="a-room" data-value="The Board Room">Hold this room</a></div>
 </div>
 <div class="card media-card">
 <div class="cmedia"><img src="${img.roomLongTable}" alt="" loading="lazy"/></div>
 <h4>The Long Table</h4>
 <p>Up to twenty. Training days, workshops, quarterly reviews.</p>
 <ul class="spec"><li><span class="k">${icon.clock}Rate</span><span class="v">Per hour, to supply</span></li></ul>
-<div class="card-foot"><a class="btn sm ghost" href="#appt-form" data-pick="a-room" data-value="The Long Table">Hold this room <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="btn sm ghost" href="#appt-form" data-pick="a-room" data-value="The Long Table">Hold this room</a></div>
 </div>
 </div>
 </section>

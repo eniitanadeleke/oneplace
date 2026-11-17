@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "../SocialIcons/SocialIcons";
-import logo from "../../assets/one-place-logo-clean.png";
 import { contact, mailto } from "../../lib/contact";
 import "./Footer.css";
 
 export default function Footer(){return <footer className="site">
-  <div className="footer-watermark" aria-hidden="true"><img src={logo} alt="" /></div>
   <div className="shell footer-content">
     <div className="fcols">
       <div className="fbrand"><h5>One Place Properties Ltd</h5><p>Registered office to supply</p><p>RC number to supply</p></div>

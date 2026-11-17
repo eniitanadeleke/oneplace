@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import { contact } from "../../lib/contact";
 import { InstagramIcon, FacebookIcon } from "../SocialIcons/SocialIcons";
 import "./ActionBar.css";
@@ -12,7 +11,7 @@ export default function ActionBar(){
     <div className="action-bar" role="region" aria-label="Quick links">
       <a className="ab-icon" href={contact.instagramHref} target="_blank" rel="noopener" aria-label="Instagram"><InstagramIcon size={20}/></a>
       <a className="ab-icon" href={contact.facebookHref} target="_blank" rel="noopener" aria-label="Facebook"><FacebookIcon size={20}/></a>
-      <Link className="ab-btn brass" to="/enquire">Enquire <ArrowRight size={16}/></Link>
+      <Link className="ab-btn brass" to="/enquire">Enquire</Link>
     </div>
   );
 }

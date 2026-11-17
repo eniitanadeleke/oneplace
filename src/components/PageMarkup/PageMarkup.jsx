@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { mailto } from "../../lib/contact";
+import { enhance, flip } from "../../lib/alive";
 import "./PageMarkup.css";
 
 const SAVED_KEY = "op-saved-spaces";
@@ -36,16 +37,15 @@ export default function PageMarkup({ html }) {
         });
       });
       let shown = 0;
-      root.querySelectorAll(".listing").forEach(listing => {
+      const listings = Array.from(root.querySelectorAll(".listing"));
+      const change = () => listings.forEach(listing => {
         const okCity = filterState.city === "all" || listing.dataset.city === filterState.city;
         const okType = filterState.type === "all" || listing.dataset.type === filterState.type;
         const visible = okCity && okType;
         listing.style.display = visible ? "" : "none";
-        if (visible) {
-          shown += 1;
-          if (animate) { listing.classList.remove("pop"); void listing.offsetWidth; listing.classList.add("pop"); }
-        }
+        if (visible) shown += 1;
       });
+      if (animate) flip(listings, change); else change();
       const empty = root.querySelector("#emptyState");
       if (empty) empty.style.display = shown === 0 ? "" : "none";
     };
@@ -97,6 +97,10 @@ export default function PageMarkup({ html }) {
           const field = select.closest(".field");
           field?.classList.remove("flash"); void field?.offsetWidth; field?.classList.add("flash");
         }
+        // mark the chosen room / studio card
+        const card = pick.closest(".card");
+        card?.parentElement?.querySelectorAll(".card.picked").forEach(c => c.classList.remove("picked"));
+        card?.classList.add("picked");
         const target = root.querySelector(pick.getAttribute("href") || "");
         target?.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
         return;
@@ -204,10 +208,11 @@ export default function PageMarkup({ html }) {
       const track = root.querySelector(dots.dataset.dotsFor);
       if (!track) return;
       const n = track.children.length;
-      dots.innerHTML = Array.from({ length: n }, () => "<i></i>").join("");
+      dots.innerHTML = `<span class="dots">${Array.from({ length: n }, () => "<i></i>").join("")}</span>`;
       const update = () => {
-        const w = track.firstElementChild?.getBoundingClientRect().width || 1;
-        const idx = Math.min(n - 1, Math.round(track.scrollLeft / (w + 14)));
+        const [a, b] = track.children;
+        const step = b ? b.offsetLeft - a.offsetLeft : track.clientWidth || 1;
+        const idx = Math.min(n - 1, Math.round(track.scrollLeft / step));
         dots.querySelectorAll("i").forEach((d, i) => d.classList.toggle("on", i === idx));
       };
       update();
@@ -217,6 +222,7 @@ export default function PageMarkup({ html }) {
 
     root.addEventListener("click", onClick);
     root.addEventListener("submit", onSubmit);
+    cleanups.push(enhance(root));
     return () => {
       root.removeEventListener("click", onClick);
       root.removeEventListener("submit", onSubmit);

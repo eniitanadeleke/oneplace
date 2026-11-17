@@ -21,17 +21,17 @@ const markup = `
 <a class="card reach" href="${mailto()}">
 <span class="ic-head">${icon.mail}</span>
 <h4>Email</h4>
-<span class="tlink">${contact.email} <span class="arrow">→</span></span>
+<span class="tlink">${contact.email}</span>
 </a>
 <a class="card reach" href="${contact.instagramHref}" target="_blank" rel="noopener">
 <span class="ic-head">${social.instagram}</span>
 <h4>Instagram</h4>
-<span class="tlink">Instagram <span class="arrow">→</span></span>
+<span class="tlink">Instagram</span>
 </a>
 <a class="card reach" href="${contact.facebookHref}" target="_blank" rel="noopener">
 <span class="ic-head">${social.facebook}</span>
 <h4>Facebook</h4>
-<span class="tlink">Facebook <span class="arrow">→</span></span>
+<span class="tlink">Facebook</span>
 </a>
 </div>
 </section>

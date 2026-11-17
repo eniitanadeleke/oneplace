@@ -18,7 +18,7 @@ const markup = `
 <div class="body-col">
 <p>Recording, live sessions, video, rehearsal and streaming, in a building with power that stays on.</p>
 <div class="btn-row stack-sm" style="margin-top:22px">
-<a class="btn brass" href="/studios#studio-form">Book a session <span class="arrow">→</span></a>
+<a class="btn brass" href="/studios#studio-form">Book a session</a>
 <a class="btn ghost" href="/enquire">Take a tour</a>
 </div>
 </div>
@@ -31,25 +31,25 @@ const markup = `
 <div class="cmedia"><img src="${img.studioRecording}" alt="Vocal take through the booth glass" loading="lazy"/></div>
 <h4>Recording room</h4>
 <p>Treated booth and control room. Vocals, voiceover, instrument tracking.</p>
-<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Recording room">Book a session <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Recording room">Book a session</a></div>
 </div>
 <div class="card media-card">
 <div class="cmedia"><img src="${img.studioLive}" alt="Full band or choir under the lighting grid" loading="lazy"/></div>
 <h4>Live room</h4>
 <p>Room enough for a band or a choir, with a lighting grid and multi camera positions.</p>
-<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Live room">Book a session <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Live room">Book a session</a></div>
 </div>
 <div class="card media-card">
 <div class="cmedia"><img src="${img.studioBroadcast}" alt="Interview set with cameras running" loading="lazy"/></div>
 <h4>Broadcast floor</h4>
 <p>Set, lighting and streaming feed for interviews, podcasts and live programmes.</p>
-<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Broadcast floor">Book a session <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Broadcast floor">Book a session</a></div>
 </div>
 <div class="card media-card">
 <div class="cmedia"><img src="${img.studioRehearsal}" alt="Rehearsal in progress, backline set up" loading="lazy"/></div>
 <h4>Rehearsal space</h4>
 <p>Backline, mirrors and floor space. Cheaper hours for regular bookings.</p>
-<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Rehearsal space">Book a session <span class="arrow">→</span></a></div>
+<div class="card-foot"><a class="tlink" href="#studio-form" data-pick="s-room" data-value="Rehearsal space">Book a session</a></div>
 </div>
 </div>
 </section>

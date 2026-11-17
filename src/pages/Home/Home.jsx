@@ -16,7 +16,7 @@ const markup = `
 <div>
 <p class="lede">We buy and develop commercial property in the centre of cities. Offices, shopping malls, shops, event centres, studios and room to sit down. Then we fill them.</p>
 <div class="btn-row stack-sm">
-<a class="btn brass" href="/spaces">Find a space <span class="arrow">→</span></a>
+<a class="btn brass" href="/spaces">Find a space</a>
 <a class="btn on-photo" href="/partner">Partner with us</a>
 </div>
 </div>
@@ -40,7 +40,7 @@ const markup = `
 <div class="body-col">
 <p>Most commercial property is built to be leased and then left alone. We build for the opposite. We buy where a city is already moving, then design so that work, trade, meetings, performance and rest can sit in the same address.</p>
 <p>An office floor above a row of shops. A meeting suite beside an event hall. A studio that works at night in a building that works by day. The mix is what keeps a place alive, and a place that stays alive is a place that stays full.</p>
-<a class="tlink" href="/about">How we choose a site <span class="arrow">→</span></a>
+<a class="tlink" href="/about">How we choose a site</a>
 </div>
 </div>
 </section>
@@ -63,27 +63,27 @@ const markup = `
 <a class="tile" href="/what-we-build">
 <img src="${img.tileOffices}" alt="" loading="lazy"/>
 <span class="tn">01</span><h4>Offices</h4>
-<p>Serviced and shell floors, from a single suite to a whole floor.</p><span class="go">See offices →</span>
+<p>Serviced and shell floors, from a single suite to a whole floor.</p><span class="go">See offices</span>
 </a>
 <a class="tile" href="/what-we-build">
 <img src="${img.tileRetail}" alt="" loading="lazy"/>
 <span class="tn">02</span><h4>Malls and shops</h4>
-<p>Retail lines planned around footfall rather than floor area.</p><span class="go">See retail →</span>
+<p>Retail lines planned around footfall rather than floor area.</p><span class="go">See retail</span>
 </a>
 <a class="tile" href="/what-we-build">
 <img src="${img.tileEvents}" alt="" loading="lazy"/>
 <span class="tn">03</span><h4>Event centres</h4>
-<p>Halls sized so you are not paying for space you will not fill.</p><span class="go">See halls →</span>
+<p>Halls sized so you are not paying for space you will not fill.</p><span class="go">See halls</span>
 </a>
 <a class="tile" href="/studios">
 <img src="${img.tileStudios}" alt="" loading="lazy"/>
 <span class="tn">04</span><h4>Studios</h4>
-<p>Recording, live session, broadcast and rehearsal floors.</p><span class="go">See studios →</span>
+<p>Recording, live session, broadcast and rehearsal floors.</p><span class="go">See studios</span>
 </a>
 <a class="tile" href="/what-we-build">
 <img src="${img.tileLeisure}" alt="" loading="lazy"/>
 <span class="tn">05</span><h4>Leisure and open space</h4>
-<p>The parts people use without an appointment.</p><span class="go">See leisure →</span>
+<p>The parts people use without an appointment.</p><span class="go">See leisure</span>
 </a>
 </div>
 <div class="swipe-hint" data-dots-for="#space-tiles" aria-hidden="true"></div>
@@ -97,7 +97,7 @@ const markup = `
 <span class="label">Operated by us</span>
 <h2 class="display">The Appointments</h2>
 <p>Meeting rooms inside our buildings, booked by the hour or the day. Quiet, serviced, and ready when you walk in. For the conversation that should not be held in a restaurant.</p>
-<div class="btn-row"><a class="btn on-deep" href="/appointments">Book a room <span class="arrow">→</span></a></div>
+<div class="btn-row"><a class="btn on-deep" href="/appointments">Book a room</a></div>
 </div>
 </article>
 <article class="feature">
@@ -106,7 +106,7 @@ const markup = `
 <span class="label">Operated by us</span>
 <h2 class="display">One Place Studios</h2>
 <p>Studio floors built for recording, live sessions, broadcast and rehearsal. Treated for sound, rigged for light, and open to producers, choirs, broadcasters, brands and independent creators.</p>
-<div class="btn-row"><a class="btn on-deep" href="/studios">See the studios <span class="arrow">→</span></a></div>
+<div class="btn-row"><a class="btn on-deep" href="/studios">See the studios</a></div>
 </div>
 </article>
 </div>
@@ -120,7 +120,7 @@ const markup = `
 <h2 class="display">Property that earns because people use it.</h2>
 <div class="body-col" style="margin-top:24px">
 <p>We work with landowners, capital partners and corporate occupiers on the acquisition and development of commercial assets. The approach is not complicated. Buy where the city already moves, build for more than one use, and manage for occupancy rather than for prestige.</p>
-<div class="btn-row stack-sm"><a class="btn" href="/partner">Talk to us about a deal <span class="arrow">→</span></a></div>
+<div class="btn-row stack-sm"><a class="btn" href="/partner">Talk to us about a deal</a></div>
 </div>
 </div>
 </div>

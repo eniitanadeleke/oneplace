@@ -1,10 +1,13 @@
-:root{color-scheme:light;--tap:44px;}
+/* Same colours whatever the visitor's light/dark setting.
+   "only light" also stops Chrome's automatic dark mode from recolouring the site. */
+:root{color-scheme:only light;--tap:44px;}
 html,body,#root{min-height:100%;}
+html,body{background:#F6F4EF;color:#141414;}
 body{overflow-x:hidden;}
 button,a,input,select,textarea{font:inherit;}
 button,a{-webkit-tap-highlight-color:transparent;}
 .page{overflow:clip;}
 .display{overflow-wrap:anywhere;}
 /* room for the mobile action bar */
-@media(max-width:899px){body{padding-bottom:calc(72px + env(safe-area-inset-bottom));}}
+@media(max-width:899px){body{padding-bottom:calc(70px + env(safe-area-inset-bottom));}}
 body.menu-open{overflow:hidden;}

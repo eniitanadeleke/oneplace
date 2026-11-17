@@ -41,7 +41,7 @@ const markup = `
 <li>${icon.check}Flexible fit out, shell or serviced</li>
 <li>${icon.check}Service charge quoted up front</li>
 </ul>
-<div class="btn-row stack-sm"><a class="btn ghost" href="/spaces?type=office">See available offices <span class="arrow">→</span></a></div>
+<div class="btn-row stack-sm"><a class="btn ghost" href="/spaces?type=office">See available offices</a></div>
 </div>
 </div>
 </section>
@@ -63,7 +63,7 @@ const markup = `
 <li>${icon.check}Agreed signage positions</li>
 <li>${icon.check}The centre marketed as a whole, not unit by unit</li>
 </ul>
-<div class="btn-row stack-sm"><a class="btn ghost" href="/spaces?type=shop">See available shops <span class="arrow">→</span></a></div>
+<div class="btn-row stack-sm"><a class="btn ghost" href="/spaces?type=shop">See available shops</a></div>
 </div>
 </div>
 </section>
@@ -85,7 +85,7 @@ const markup = `
 <li>${icon.check}Catering access, in house or your own</li>
 <li>${icon.check}A coordinator on site for the whole event</li>
 </ul>
-<div class="btn-row stack-sm"><a class="btn ghost" href="/enquire">Check a date <span class="arrow">→</span></a></div>
+<div class="btn-row stack-sm"><a class="btn ghost" href="/enquire">Check a date</a></div>
 </div>
 </div>
 </section>
@@ -97,7 +97,7 @@ const markup = `
 </div>
 <div class="body-col">
 <p>Recording, live session, broadcast and rehearsal floors, built quiet. Full detail and rates on the Studios page.</p>
-<div class="btn-row stack-sm"><a class="btn on-deep" href="/studios">Go to One Place Studios <span class="arrow">→</span></a></div>
+<div class="btn-row stack-sm"><a class="btn on-deep" href="/studios">Go to One Place Studios</a></div>
 </div>
 </div>
 </section>
